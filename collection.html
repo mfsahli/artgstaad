@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection — ART GSTAAD</title>
+<meta name="description" content="The ART GSTAAD collection — walk through three gallery rooms with works by Warhol, Richter, Oppenheim, Schütte, Brice, Man Ray, Kandinsky and many others.">
+<meta property="og:title" content="The Collection — ART GSTAAD">
+<meta property="og:image" content="assets/img/warholmarylin.jpg">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header dark-text solid">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Art<span>&nbsp;Gstaad</span></a>
+    <nav class="nav-links">
+      <a href="book.html">The Book</a>
+      <a href="exhibition.html">Exhibition</a>
+      <a href="collection.html">Collection</a>
+      <a href="perspectives.html">Perspectives</a>
+      <a href="about.html">About</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="book.html">The Book</a>
+  <a href="exhibition.html">Exhibition</a>
+  <a href="collection.html">Collection</a>
+  <a href="perspectives.html">Perspectives</a>
+  <a href="about.html">About</a>
+  <a href="visit.html">Visit</a>
+</nav>
+
+<!-- INTRO -->
+<section class="section" style="padding-top: clamp(8rem, 14vw, 12rem); padding-bottom: 2rem;">
+  <div class="wrap">
+    <p class="eyebrow reveal">Example collections</p>
+    <h1 class="display-xl reveal">The <em class="italic">Collection</em></h1>
+    <p class="lede reveal mt-2">
+      Works from international collectors, hung across three rooms.
+      Walk along each wall — or switch to the index to filter by artist.
+    </p>
+    <div class="mt-2 reveal" style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center;">
+      <div class="view-toggle">
+        <button class="on" data-view="rooms">Room view</button>
+        <button data-view="index">Index</button>
+      </div>
+      <span class="room-hint">→ scroll the walls sideways · click a work to view large</span>
+    </div>
+  </div>
+</section>
+
+<!-- ROOM VIEW (built from index by script) -->
+<div id="room-view"></div>
+
+<!-- INDEX VIEW -->
+<div id="index-view" style="display:none;">
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="filter-bar reveal">
+        <button class="on" data-filter="all">All</button>
+        <button data-filter="Andy Warhol">Warhol</button>
+        <button data-filter="Lisa Brice">Brice</button>
+        <button data-filter="Thomas Schütte">Schütte</button>
+        <button data-filter="Meret Oppenheim">Oppenheim</button>
+        <button data-filter="Man Ray">Man Ray</button>
+        <button data-filter="Jasper Johns">Johns</button>
+        <button data-filter="Wassily Kandinsky">Kandinsky</button>
+        <button data-filter="Franz Marc">Marc</button>
+        <button data-filter="Rebecca Horn">Horn</button>
+        <button data-filter="Nam June Paik">Paik</button>
+        <button data-filter="Allen Jones">Jones</button>
+        <button data-filter="Howard Kanovitz">Kanovitz</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight gallery-sec" data-room="Room I">
+    <div class="wrap">
+      <h2 class="display-md reveal mb-3">Room <em class="italic">I</em></h2>
+      <div class="masonry">
+        <div class="work reveal" data-artist="Andy Warhol" data-caption="Andy Warhol"><div class="frame"><img loading="lazy" src="assets/img/warholmarylin.jpg" alt="Andy Warhol"></div><p class="caption">Andy Warhol</p></div>
+        <div class="work reveal" data-caption="Cragg · Beuys"><div class="frame"><img loading="lazy" src="assets/img/craggbeuys_1.jpg" alt="Cragg / Beuys"></div><p class="caption">Cragg · Beuys</p></div>
+        <div class="work reveal" data-artist="Thomas Schütte" data-caption="Thomas Schütte"><div class="frame"><img loading="lazy" src="assets/img/schttethomas.jpg" alt="Thomas Schütte"></div><p class="caption">Thomas Schütte</p></div>
+        <div class="work reveal" data-artist="Lisa Brice" data-caption="Lisa Brice"><div class="frame"><img loading="lazy" src="assets/img/briceg.jpg" alt="Lisa Brice"></div><p class="caption">Lisa Brice</p></div>
+        <div class="work reveal" data-caption="K.R.H. Sonderborg"><div class="frame"><img loading="lazy" src="assets/img/sonderborg.jpg" alt="K.R.H. Sonderborg"></div><p class="caption">K.R.H. Sonderborg</p></div>
+        <div class="work reveal" data-caption="Joe Tilson"><div class="frame"><img loading="lazy" src="assets/img/tilson02.jpg" alt="Joe Tilson"></div><p class="caption">Joe Tilson</p></div>
+        <div class="work reveal" data-artist="Allen Jones" data-caption="Allen Jones"><div class="frame"><img loading="lazy" src="assets/img/allenjones04.jpg" alt="Allen Jones"></div><p class="caption">Allen Jones</p></div>
+        <div class="work reveal" data-caption="Gruppe SPUR"><div class="frame"><img loading="lazy" src="assets/img/spur.jpg" alt="Gruppe SPUR"></div><p class="caption">Gruppe SPUR</p></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/421ac95a-a101-44ab-8d7a-452062be733c.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/91e473f0-b6c1-4e24-9634-5a693f04bee9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/24490afd-24e9-4aff-bd66-ceda51f48b5a.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/d48077ef-64e7-4d45-b676-14b01469fe30.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/e91af335-d014-49b6-ad49-1d9c57c5e5fe.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/191230a3-eab4-4219-9a32-79c8b639ba5c.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/b8db6fec-0c46-44f1-bec5-db69e58dab3d.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/9b3e7cef-b4e1-458c-ac6c-c42de41f2383.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/xg.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/dag04.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/finkelstein.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/frg.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal" data-caption="Gómez-Perales"><div class="frame"><img loading="lazy" src="assets/img/gomezperales_1.jpg" alt="Gómez-Perales"></div><p class="caption">Gómez-Perales</p></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/h.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/hhzimmermann.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/a1d1fcc8-c760-4e44-9e2b-95b77e950678.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/0506257d-8478-4850-aba8-a807c223d224.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/76604672-38f9-4ee8-a28c-1e7a58c802b6.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/98b1c23b-1d2e-4b1f-9074-bf935b7b2812.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/0c8acc55-6c5c-476e-a979-b308e1f8d112.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/7da978e2-ff7b-478b-aa9b-c9903b7852f7.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/cf95819b-550e-4040-b35f-65d525a05cc9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/f5e64bb1-bb4e-4ea6-b806-66bdc37c6ae9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/1f131ce0-05e2-4ccc-bd5f-6ba7defdd3d1.jpg" alt="Work from the collection"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <section class="section section--tight gallery-sec" data-room="Room II">
+    <div class="wrap">
+      <h2 class="display-md reveal mb-3">Room <em class="italic">II</em></h2>
+      <div class="masonry">
+        <div class="work reveal" data-artist="Franz Marc" data-caption="Franz Marc"><div class="frame"><img loading="lazy" src="assets/img/marc.jpg" alt="Franz Marc"></div><p class="caption">Franz Marc</p></div>
+        <div class="work reveal" data-artist="Lisa Brice" data-caption="Lisa Brice"><div class="frame"><img loading="lazy" src="assets/img/bricet.jpg" alt="Lisa Brice"></div><p class="caption">Lisa Brice</p></div>
+        <div class="work reveal" data-caption="Raoul Hausmann"><div class="frame"><img loading="lazy" src="assets/img/hausmannroaul.jpg" alt="Raoul Hausmann"></div><p class="caption">Raoul Hausmann</p></div>
+        <div class="work reveal" data-caption="Hans Hartung"><div class="frame"><img loading="lazy" src="assets/img/hartung02.jpg" alt="Hans Hartung"></div><p class="caption">Hans Hartung</p></div>
+        <div class="work reveal" data-caption="Bernhard Heiliger"><div class="frame"><img loading="lazy" src="assets/img/heiliger.jpg" alt="Bernhard Heiliger"></div><p class="caption">Bernhard Heiliger</p></div>
+        <div class="work reveal" data-artist="Rebecca Horn" data-caption="Rebecca Horn"><div class="frame"><img loading="lazy" src="assets/img/hornrebecca_1.jpg" alt="Rebecca Horn"></div><p class="caption">Rebecca Horn</p></div>
+        <div class="work reveal" data-caption="Rupprecht Geiger"><div class="frame"><img loading="lazy" src="assets/img/geigerrupprecht02.jpg" alt="Rupprecht Geiger"></div><p class="caption">Rupprecht Geiger</p></div>
+        <div class="work reveal" data-caption="Feng Lu"><div class="frame"><img loading="lazy" src="assets/img/fenglu2_1.jpg" alt="Feng Lu"></div><p class="caption">Feng Lu</p></div>
+        <div class="work reveal" data-caption="Dogon sculpture"><div class="frame"><img loading="lazy" src="assets/img/dogonpferd.jpg" alt="Dogon sculpture"></div><p class="caption">Dogon sculpture</p></div>
+        <div class="work reveal" data-caption="Icon"><div class="frame"><img loading="lazy" src="assets/img/ikone_1.jpg" alt="Icon"></div><p class="caption">Icon</p></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/berger.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/willen.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/delphy.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/grfenitz.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/hampelcharlotte.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/6882f7e1-f6fb-46fd-9e84-7e7890b72fc9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/250f4967-41e9-4684-9ba8-8ce19aee13c6.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/39933a19-52a0-43ba-bda1-4b9fe37ee493.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/924b49c9-81e1-45f0-8fb9-11db21d358fa.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/b9e270b9-adaf-4d73-ae32-cee9e0f1c825.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/2981202f-47d8-4ad7-8d06-dc0722945ff8.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/4bf956be-db7f-4122-8087-3e0bcf6ec796.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/dfaae186-e1d1-4b60-b8be-f9b534f08496.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/69651d97-d8c9-4d2f-ae47-e8fbbc4517f0.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/5840a012-7c9c-461c-a839-4211c2ff3772.JPG" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/384d68d3-85a7-404a-bb57-fb68d2130d87.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/c89ba190-3fd7-4486-83a7-e014260b8da9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/9f22fbe6-1893-4137-9fdf-c3fa72171e1a.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/f1c8a797-6549-4ba7-96ea-73cabfdd7043.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/a4ba33d5-69cc-488f-8dc6-2cd96865679f.jpg" alt="Work from the collection"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <section class="section section--tight gallery-sec" data-room="Room III">
+    <div class="wrap">
+      <h2 class="display-md reveal mb-3">Room <em class="italic">III</em></h2>
+      <div class="masonry">
+        <div class="work reveal" data-artist="Meret Oppenheim" data-caption="Meret Oppenheim"><div class="frame"><img loading="lazy" src="assets/img/oppenheim.jpg" alt="Meret Oppenheim"></div><p class="caption">Meret Oppenheim</p></div>
+        <div class="work reveal" data-artist="Man Ray" data-caption="Man Ray"><div class="frame"><img loading="lazy" src="assets/img/manray2.jpg" alt="Man Ray"></div><p class="caption">Man Ray</p></div>
+        <div class="work reveal" data-artist="Jasper Johns" data-caption="Jasper Johns"><div class="frame"><img loading="lazy" src="assets/img/jasperjohns.jpg" alt="Jasper Johns"></div><p class="caption">Jasper Johns</p></div>
+        <div class="work reveal" data-artist="Wassily Kandinsky" data-caption="Wassily Kandinsky"><div class="frame"><img loading="lazy" src="assets/img/kandinsky_1.jpg" alt="Wassily Kandinsky"></div><p class="caption">Wassily Kandinsky</p></div>
+        <div class="work reveal" data-caption="Robert Indiana"><div class="frame"><img loading="lazy" src="assets/img/indiana02.jpg" alt="Robert Indiana"></div><p class="caption">Robert Indiana</p></div>
+        <div class="work reveal" data-artist="Nam June Paik" data-caption="Nam June Paik"><div class="frame"><img loading="lazy" src="assets/img/paikjune.jpg" alt="Nam June Paik"></div><p class="caption">Nam June Paik</p></div>
+        <div class="work reveal" data-artist="Rebecca Horn" data-caption="Rebecca Horn"><div class="frame"><img loading="lazy" src="assets/img/hornrebecca.jpg" alt="Rebecca Horn"></div><p class="caption">Rebecca Horn</p></div>
+        <div class="work reveal" data-artist="Lisa Brice" data-caption="Lisa Brice"><div class="frame"><img loading="lazy" src="assets/img/lisabrice05_1.jpg" alt="Lisa Brice"></div><p class="caption">Lisa Brice</p></div>
+        <div class="work reveal" data-caption="A.R. Penck"><div class="frame"><img loading="lazy" src="assets/img/penklausanne4.jpg" alt="A.R. Penck"></div><p class="caption">A.R. Penck</p></div>
+        <div class="work reveal" data-caption="Pol Bury"><div class="frame"><img loading="lazy" src="assets/img/pol_bury_guggenheim_museum_320x240.jpg" alt="Pol Bury"></div><p class="caption">Pol Bury</p></div>
+        <div class="work reveal" data-caption="Almir Mavignier"><div class="frame"><img loading="lazy" src="assets/img/mavignier2.jpg" alt="Almir Mavignier"></div><p class="caption">Almir Mavignier</p></div>
+        <div class="work reveal" data-artist="Howard Kanovitz" data-caption="Howard Kanovitz"><div class="frame"><img loading="lazy" src="assets/img/kanovitz.jpg" alt="Howard Kanovitz"></div><p class="caption">Howard Kanovitz</p></div>
+        <div class="work reveal" data-artist="Howard Kanovitz" data-caption="Howard Kanovitz"><div class="frame"><img loading="lazy" src="assets/img/kannovitz03.jpg" alt="Howard Kanovitz"></div><p class="caption">Howard Kanovitz</p></div>
+        <div class="work reveal" data-artist="Allen Jones" data-caption="Allen Jones"><div class="frame"><img loading="lazy" src="assets/img/jones.jpg" alt="Allen Jones"></div><p class="caption">Allen Jones</p></div>
+        <div class="work reveal" data-caption="Herbert Warmuth"><div class="frame"><img loading="lazy" src="assets/img/warmuthherbert_1.jpg" alt="Herbert Warmuth"></div><p class="caption">Herbert Warmuth</p></div>
+        <div class="work reveal" data-caption="Vera Pestel"><div class="frame"><img loading="lazy" src="assets/img/verapestel.jpg" alt="Vera Pestel"></div><p class="caption">Vera Pestel</p></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/merz1.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/lthiurs01.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/stilleben.jpg" alt="Still life — work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/pointilismus.jpg" alt="Pointillism — work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/riche06.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/kubplatik_1.jpg" alt="Cubist sculpture — work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/ben02.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/eii.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal" data-artist="Howard Kanovitz"><div class="frame"><img loading="lazy" src="assets/img/kanovitz2_1.jpg" alt="Howard Kanovitz"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/1bb48fbc-5ac0-49cb-af0c-537f4c5234c7.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/a123bf3c-55c1-4348-a45a-6c60ad2f9fba.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/d3bb5fe3-7085-4edc-abd2-e3e47512a0e5.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/2aad2095-0ed1-42b7-9538-8ebd3b133c4b.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/b5fc4b05-6804-416d-af02-d9bfa281187d.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/86348118-59de-4730-a83d-56ac384e6f02.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/88aebc20-23c2-4f3b-ba58-7f2d91f2e528.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/236fd3aa-a237-43e0-b0a0-67fdb2627a4c.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/0f666a3a-6109-46fe-b9de-2d6132e385a5.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/c6751801-e900-43f9-83ff-84d7060e0b2d.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/559a1578-912a-489d-bac1-2507bffb4b75.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/a2174aa4-fe93-4b8b-bd0c-ad7a2dd945c4.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/dad39b9f-b41a-469b-8bf8-2cba9553b740.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/e43edc8a-7c1a-4da8-936a-47fa46919bc9.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/b15cd837-ef17-4249-a0df-363cffeec0c4.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/efcf0d0f-d879-4da7-a58a-24394700634d.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/5397bd75-9a1e-44ee-8503-e9aa94149de5.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/9312c5ff-8c8c-467f-95b1-38828d7fe25b.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/6ba2e698-fd47-425d-9ffb-089f11498b49.jpg" alt="Work from the collection"></div></div>
+        <div class="work reveal"><div class="frame"><img loading="lazy" src="assets/img/1a53dd54-1472-41bf-8286-d886e4a6e2a0.jpg" alt="Work from the collection"></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" role="dialog" aria-label="Artwork view">
+  <button class="lb-close" aria-label="Close">×</button>
+  <img src="" alt="">
+  <p class="lb-caption"></p>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-word">Art <em>Gstaad</em></div>
+    <div class="newsletter">
+      <h3>Be there when the doors open — news from the gallery, the book and the exhibition.</h3>
+      <form action="mailto:info@artgstaad.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Your e-mail address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Visit</h4>
+        <ul><li>Gsteig b. Gstaad</li><li>Saanenland, Switzerland</li><li>Opening September 2026</li></ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="book.html">The Book</a></li>
+          <li><a href="exhibition.html">Exhibition</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="perspectives.html">Perspectives</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="visit.html">Enquiries &amp; book requests</a></li>
+          <li><a href="https://www.instagram.com/artgstaad/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>International Art Group</h4>
+        <ul><li>Leading since 2016</li><li>© ART GSTAAD</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© ART GSTAAD — all works © the artists and their estates</span>
+      <a href="legal.html">Legal use</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Build room view from index (before main.js binds events) -->
+<script>
+(function () {
+  var roomView = document.getElementById('room-view');
+  document.querySelectorAll('.gallery-sec').forEach(function (sec, i) {
+    var room = document.createElement('div');
+    room.className = 'room';
+    var title = document.createElement('div');
+    title.className = 'room-title-card';
+    title.innerHTML = '<p class="eyebrow">Room</p><div class="display-lg display italic">' +
+      ['I','II','III'][i] + '</div><p class="room-hint" style="margin-top:1rem;">scroll →</p>';
+    room.appendChild(title);
+    sec.querySelectorAll('.work').forEach(function (w) {
+      var img = w.querySelector('img');
+      var cap = w.dataset.caption || '';
+      var piece = document.createElement('div');
+      piece.className = 'piece';
+      if (cap) piece.dataset.caption = cap;
+      piece.innerHTML = '<img loading="lazy" src="' + img.getAttribute('src') + '" alt="' + (img.alt || '') + '">' +
+        (cap ? '<div class="wall-label"><div class="artist">' + cap + '</div><div class="work-info">From the collection</div></div>'
+             : '<div class="wall-label"><div class="work-info">From the collection</div></div>');
+      room.appendChild(piece);
+    });
+    roomView.appendChild(room);
+  });
+})();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
